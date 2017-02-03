@@ -43,6 +43,13 @@ h4 {
   margin: 1em 0 .5em;
 }
 
+main ul {
+  list-style: disc;
+  li {
+    margin: .25em 0 .25em 1.125em;
+  }
+}
+
 strong {font-weight: bold;}
 em {font-style: italic;}
 
@@ -185,12 +192,16 @@ aside {
   h3 {
     color: white;
     font-size: 1.333em;
-    padding: 0.563em;
+    line-height: 1.618;
+    padding: 0.422em 0.563em;
     -webkit-transition: background 300ms ease;
     -moz-transition: background 300ms ease;
     -ms-transition: background 300ms ease;
     -o-transition: background 300ms ease;
     transition: background 300ms ease;
+    @media screen and (max-width: 600px) {
+      font-size: 1.125em;
+    }
   }
   li {
     margin: 1.5em 0;
