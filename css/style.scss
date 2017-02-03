@@ -180,6 +180,14 @@ main a {
   }
 }
 
+main h3 {
+  font-family: $sans;
+  font-size: 1.333em;
+  line-height: 1.333;
+  margin: 1.333em 0 1em;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 850px) {
   main {
     float: left;
