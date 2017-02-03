@@ -1,0 +1,4 @@
+{% assign url = '/images/' | append: include.file %}
+<figure>
+  <img src="{{ url }}" alt="{% if include.alt %}{{ include.alt }}{% else %}Image{% endif %}">
+</figure>

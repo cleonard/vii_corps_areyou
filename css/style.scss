@@ -1,0 +1,277 @@
+---
+---
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Oswald:400,700');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+$green: #5f6736;
+$gold: #f1d281;
+$red: #dd0330;
+$blue: #24509b;
+$gray: #3e3934;
+$offwhite: #f3eee1;
+
+$serif: "Libre Baskerville", serif;
+$sans: "Oswald", sans-serif;
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+article, aside, figure, figure img, hgroup, footer, header, nav, section {
+  display: block;
+}
+
+img, object, embed, video, iframe {
+  display: block;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+p {margin: 1.333em 0;}
+
+h4 {
+  font-size: 1.25em;
+  margin: 1em 0 .5em;
+}
+
+strong {font-weight: bold;}
+em {font-style: italic;}
+
+body {
+  background: #f5f3ed;
+  color: $gray;
+  font-family: $serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+header {
+  background-color: #d4ceb7;
+  position: relative;
+}
+
+.background {
+  background-size: cover;
+  content: "";
+  padding-top: 50%;
+  width: 100%;
+}
+
+#background1 {
+  background-image: url(/images/background1.jpg)
+}
+#background2 {
+  background-image: url(/images/background2.jpg)
+}
+#background3 {
+  background-image: url(/images/background3.jpg)
+}
+#background4 {
+  background-image: url(/images/background4.jpg)
+}
+
+#identity {
+  background: $gray;
+  padding: 0 1.5em 1.5em;
+}
+
+#logo_container {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  top: -50px;
+  z-index: 1000;
+}
+
+h1 {
+  color: white;
+  font-family: $sans;
+  font-size: 1.777em;
+  line-height: 1.333em;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: -25px;
+}
+
+@media screen and (min-width: 750px) {
+  #identity {
+    background: rgba(62, 57, 52, 0.85);
+    right: 1.5em;
+    padding: 2em;
+    position: absolute;
+    top: 1.5em;
+    width: 40%;
+    z-index: 1000;
+  }
+  #logo_container, h1 {
+    position: static;
+  }
+  h1 {
+    margin-top: .25em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #identity {
+    padding: 4.5em;
+    right: 3em;
+    top: 3em;
+    width: 50%;
+  }
+  h1 {
+    font-size: 2.369em;
+  }
+}
+
+.container {
+  padding: 1.5em;
+  margin: 0 auto;
+  max-width: 1200px;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+main {
+  line-height: 1.618;
+}
+
+main a {
+  &:link, &:visited {
+    color: darken($red, 15%);
+  }
+  &:hover, &:active {
+    color: $red;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  main {
+    float: left;
+    font-size: 1.333em;
+    width: 60.5%;
+  }
+  aside {
+    float: right;
+    max-width: none;
+    width: 40.5%;
+  }
+}
+
+aside {
+  margin: 1.5em 0;
+  max-width: 400px;
+  h2, h3 {
+    font-family: $sans;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 1.777em;
+    line-height: 1.333;
+  }
+  h3 {
+    color: white;
+    font-size: 1.333em;
+    padding: 0.563em;
+    -webkit-transition: background 300ms ease;
+    -moz-transition: background 300ms ease;
+    -ms-transition: background 300ms ease;
+    -o-transition: background 300ms ease;
+    transition: background 300ms ease;
+  }
+  li {
+    margin: 1.5em 0;
+  }
+  .description {
+    background: white;
+  }
+  p {
+    line-height: 1.618;
+    padding: 1em;
+    margin: 0;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      color: lighten($gray, 25%);
+    }
+    em {
+      font-style: normal;
+      text-decoration: underline;
+    }
+  }
+  figure {
+    overflow: hidden;
+  }
+}
+
+aside h3 .fa-link {
+  opacity: 0.65;
+  margin-left: .25em;
+}
+
+li.membership {
+  border-bottom: 3px solid $red;
+  h3 {background: $red;}
+}
+
+li.reunions {
+  border-bottom: 3px solid $green;
+  h3 {background: $green;}
+}
+
+li.membership a:hover h3 {
+  background: darken($red, 10%);
+}
+
+li.reunions a:hover h3 {
+  background: darken($green, 10%);
+}
+
+li.facebook a:hover h3 {
+  background: darken($blue, 10%);
+}
+
+li.facebook {
+  h3 {
+    background: $blue;
+    color: white;
+    vertical-align: middle;
+  }
+  span {
+    display: inline-block;
+    margin-right: .25em;
+  }
+}
+
+.fa {
+  line-height: inherit;
+}
+
+footer {
+  background: darken($offwhite, 2%);
+  font-family: $sans;
+  line-height: 1.333;
+  text-align: center;
+  a {
+    color: darken($red, 15%);
+  }
+  #jayhawk_container {
+    margin: 1.5em auto;
+    max-width: 200px;
+  }
+}
