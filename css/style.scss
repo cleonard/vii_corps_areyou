@@ -192,22 +192,26 @@ main h3 {
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 800px) {
   main {
     float: left;
     font-size: 1.333em;
-    width: 60.5%;
+    width: 64%;
   }
   aside {
     float: right;
-    max-width: none;
-    width: 40.5%;
+    width: 34%;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  aside {
+    max-width: 600px;
   }
 }
 
 aside {
   margin: 1.5em 0;
-  max-width: 400px;
   h2, h3 {
     font-family: $sans;
     text-transform: uppercase;
