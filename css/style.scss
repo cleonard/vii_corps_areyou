@@ -46,7 +46,7 @@ h4 {
 main ul {
   list-style: disc;
   li {
-    margin: .25em 0 .25em 1.125em;
+    margin: .25em 0 .25em 1.138em;
   }
 }
 
@@ -75,16 +75,31 @@ header {
 }
 
 #background1 {
-  background-image: url(/images/background1.jpg)
+  background-image: url(/images/background1_sm.jpg)
 }
 #background2 {
-  background-image: url(/images/background2.jpg)
+  background-image: url(/images/background2_sm.jpg)
 }
 #background3 {
-  background-image: url(/images/background3.jpg)
+  background-image: url(/images/background3_sm.jpg)
 }
 #background4 {
-  background-image: url(/images/background4.jpg)
+  background-image: url(/images/background4_sm.jpg)
+}
+
+@media screen and (min-width: 850px) {
+  #background1 {
+    background-image: url(/images/background1.jpg)
+  }
+  #background2 {
+    background-image: url(/images/background2.jpg)
+  }
+  #background3 {
+    background-image: url(/images/background3.jpg)
+  }
+  #background4 {
+    background-image: url(/images/background4.jpg)
+  }
 }
 
 #identity {
