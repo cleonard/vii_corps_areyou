@@ -55,6 +55,7 @@ em {font-style: italic;}
 
 body {
   background: #f5f3ed;
+  border-top: 4px solid $red;
   color: $gray;
   font-family: $serif;
   font-size: 16px;
@@ -128,7 +129,7 @@ h1 {
 
 @media screen and (min-width: 750px) {
   #identity {
-    background: rgba(62, 57, 52, 0.85);
+    background: rgba(62, 57, 52, 0.80);
     right: 1.5em;
     padding: 2em;
     position: absolute;
