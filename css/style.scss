@@ -125,6 +125,7 @@ h1 {
   color: white;
   font-family: $sans;
   font-size: 1.777em;
+  letter-spacing: 1px;
   line-height: 1.333em;
   position: relative;
   text-align: center;
@@ -262,6 +263,7 @@ aside {
     text-decoration: none;
     &:hover {
       color: lighten($gray, 25%);
+      em {color: darken($gray, 5%);}
     }
     em {
       font-style: normal;
