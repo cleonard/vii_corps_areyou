@@ -11,6 +11,7 @@ $red: #dd0330;
 $blue: #24509b;
 $gray: #3e3934;
 $offwhite: #f3eee1;
+$opaque_gray: rgba(62, 57, 52, 0.70);
 
 $serif: "Libre Baskerville", serif;
 $sans: "Oswald", sans-serif;
@@ -71,7 +72,7 @@ header {
 .background {
   background-size: cover;
   content: "";
-  padding-top: 50%;
+  padding-top: 75%;
   width: 100%;
 }
 
@@ -88,7 +89,10 @@ header {
   background-image: url(/images/background4_sm.jpg)
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 750px) {
+  .background {
+    padding-top: 50%;
+  }
   #background1 {
     background-image: url(/images/background1.jpg)
   }
@@ -106,6 +110,8 @@ header {
 #identity {
   background: $gray;
   padding: 0 1.5em 1.5em;
+  position: relative;
+  z-index: 1000;
 }
 
 #logo_container {
@@ -113,7 +119,6 @@ header {
   margin: 0 auto;
   width: 100px;
   top: -50px;
-  z-index: 1000;
 }
 
 h1 {
@@ -129,7 +134,7 @@ h1 {
 
 @media screen and (min-width: 750px) {
   #identity {
-    background: rgba(62, 57, 52, 0.80);
+    background: $opaque_gray;
     right: 1.5em;
     padding: 2em;
     position: absolute;
@@ -293,11 +298,11 @@ li.facebook {
   h3 {
     background: $blue;
     color: white;
-    vertical-align: middle;
   }
   span {
     display: inline-block;
     margin-right: .25em;
+    vertical-align: middle;
   }
 }
 
