@@ -16,6 +16,8 @@ $opaque_gray: rgba(62, 57, 52, 0.70);
 $serif: "Libre Baskerville", serif;
 $sans: "Oswald", sans-serif;
 
+body, html { overflow-x:hidden; }
+
 html {
   box-sizing: border-box;
 }
@@ -170,7 +172,6 @@ h1 {
 }
 
 .container {
-  padding: 1.5em;
   margin: 0 auto;
   max-width: 1200px;
   &:after {
@@ -179,6 +180,8 @@ h1 {
     clear: both;
   }
 }
+
+.inner {padding: 1.5em;}
 
 main {
   line-height: 1.618;
